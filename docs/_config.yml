@@ -27,6 +27,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 
 url: http://nickbarbour.com  # the base hostname & protocol for your site, e.g. http://example.com
 google_analytics: G-XRBXEPZ2KZ
+google_analytics: anonymize_ip: true # Optional, but recommended
 # Build settings
 theme: minima
 plugins:
