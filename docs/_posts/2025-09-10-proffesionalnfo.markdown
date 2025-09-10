@@ -9,3 +9,5 @@ Hello welcome to my updated professional info. Below you will find all of my inf
 within my proffesional carear!
 
 [My LinkedIn](https://www.linkedin.com/in/nicholas-barbour/)
+
+[My cat](/docs/assets/cat.jpg)
