@@ -1,37 +1,32 @@
 # Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 
-title: Nicholas Barbour personal Site
-email: nicholas.barbour12@gmail.com
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+
+
+title: Nicholas Barbour
+github_username: nbarbour1999
+linkedin_username: nicholas-barbour
+#email: nicholas.barbour12@gmail.com
+
 description: >- # this means to ignore newlines until "baseurl:"
   This is the personal site of Nicholas Barbour. Here I share peronsal work
   projects pcitures and all things about me!
 
-
-url: http://nickbarbour.com  # the base hostname & protocol for your site, e.g. http://example.com
+url: https://nbarbour1999.github.io # the base hostname & protocol for your site, e.g. http://example.com
 google_analytics: G-XRBXEPZ2KZ
 #google_analytics: anonymize_ip: true # Optional, but recommended
 # Build settings
-theme: minima
+#theme: minima
+remote_theme: jekyll/minima
 plugins:
-  - jekyll-feed
+  - jekyll-remote_theme
+
+#Setting our look
+minima:
+  skin: dark
+  
+
 
 
 # Exclude from processing.
