@@ -4,14 +4,17 @@
 
 
 
-title: Nicholas Barbour
-github_username: nbarbour1999
-linkedin_username: nicholas-barbour
-#email: nicholas.barbour12@gmail.com
+title: Nicholas Barbour Website
+
+author: Nicholas Barbour
+email: nicholas.barbour12@gmail.com
 
 description: >- # this means to ignore newlines until "baseurl:"
   This is the personal site of Nicholas Barbour. Here I share peronsal work
   projects pcitures and all things about me!
+
+basicInfo: >
+  Feel free to reach out to me across any of the platforms below!
 
 url: https://nbarbour1999.github.io # the base hostname & protocol for your site, e.g. http://example.com
 google_analytics: G-XRBXEPZ2KZ
@@ -25,7 +28,15 @@ plugins:
 #Setting our look
 minima:
   skin: dark
-  
+
+social:
+  - title: Github
+    url: https://github.com/nbarbour1999
+    
+  - title: Linkedin
+    url: https://www.linkedin.com/in/nicholas-barbour
+    
+    
 
 
 
