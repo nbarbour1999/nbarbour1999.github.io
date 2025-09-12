@@ -4,9 +4,8 @@
 
 layout: home
 
-
+#background_image: /assets/cat.jpg
 ---
-
 
 
 Hello and welcome to my site!

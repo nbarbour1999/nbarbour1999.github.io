@@ -1,0 +1,6 @@
+body {
+  background-image: url('/assets/cat.jpg'); /* Replace with your image path */
+  background-size: cover; /* Ensures the image covers the entire screen */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
