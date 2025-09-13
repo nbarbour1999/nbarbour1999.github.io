@@ -29,6 +29,7 @@ plugins:
 #Setting our look
 minima:
   skin: dark
+  
 
 social:
   - title: Github
