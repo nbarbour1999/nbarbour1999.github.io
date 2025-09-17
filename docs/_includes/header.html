@@ -1,10 +1,10 @@
 <!-- TODO Make Darker find out how to remove bar at top-->
-<header class="site-header" role="banner" style="background: #999999 ; ">
+<header class="site-header" role="banner" style="background: #201f1f ; ">
 
   <div class="wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}" style="color: black;">{{ site.title | escape }}</a>
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}" style="color: rgb(224, 220, 220);">{{ site.title | escape }}</a>
 
     {%- if page_paths -%}
       <nav class="site-nav">
