@@ -1,6 +1,6 @@
 ---
 
-#TODO Change how our home looks
+
 layout: home
 
 #background_image: /assets/cat.jpg
