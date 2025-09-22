@@ -3,13 +3,16 @@ layout: default
 ---
 <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
 <!-- Potentially add blur effect -->
-<div class="home-wrapper" style="background-image: url('{{ page.background_image | relative_url }}'); background-size: cover; background-position: center; background-repeat: no-repeat; padding: 20px;">
+<div class="home-wrapper" style="background-image: url('{{ page.background_image | relative_url }}'); background-size: cover; background-position: center; background-repeat: no-repeat; padding: 20px; ">
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
-  <div class="home-content" style = "text-align: left;">
-    {{ content }}
+  <div class="home-columns">
+    <div class="column">
+      {{ content }}
+    </div>
+    
 
     {%- if site.posts.size > 0 -%}
       <h2 class="post-list-heading">{{ page.list_title}}</h2>
@@ -18,7 +21,10 @@ layout: default
         <li>
           <h3>
             <a class="post-link" href="{{ post.url | relative_url }} ">
-              {{ post.title | escape }}
+              <div class = "column">
+                {{ post.title | escape }}
+              </div>
+              
             </a>
           </h3>
           {%- if site.show_excerpts -%}
