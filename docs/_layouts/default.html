@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
-  {%- include head.html -%}
+  <head>
+    {%- include head.html -%}
+    <link rel="icon" type="image/png" href="{{ '/assets/icon.png' | relative_url }}">
+  </head>
+  
 
   <body style="background-image: url('{{ '/assets/background.jpg' | relative_url }}'); background-size: cover; background-position: center; 
   background-repeat: no-repeat; backdrop-filter: blur(10px);">
