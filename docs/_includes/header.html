@@ -1,9 +1,9 @@
-<header class="site-header" role="banner" style="background: #201f1f ; border-top: none; margin-top: 0;">
+<header class="site-header" role="banner" style="background: transparent; border-top: none; margin-top: 10px;">
 
   <div class="wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}" style="color: rgb(224, 220, 220);">{{ site.title | escape }}</a>
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}" style="color: rgb(224, 220, 220); position: relative; right: 500px;">{{ site.title | escape }}</a>
 
     {%- if page_paths -%}
       <nav class="site-nav">
@@ -16,12 +16,12 @@
           </span>
         </label>
 
-        <div class="trigger">
+  <div class="trigger" style="display: flex; justify-content: flex-end; gap: 80px;">
           {%- for path in page_paths -%}
             {%- assign my_page = site.pages | where: "path", path | first -%}
             {%- if my_page.title -%}
             <!-- TODO Finalize our font choices for our menue options -->
-            <a class="page-link" href="{{ my_page.url | relative_url }}" style = "margin-right: 16px;">{{ my_page.title | escape }}</a>
+            <a class="page-link" href="{{ my_page.url | relative_url }}" style = "font-family: 'Roboto', sans-serif; font-size: 18px; color: rgb(224, 220, 220); position: relative; left: 500px;">{{ my_page.title | escape }}</a>
             {%- endif -%}
           {%- endfor -%}
         </div>

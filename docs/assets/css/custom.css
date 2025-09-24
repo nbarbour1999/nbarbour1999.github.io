@@ -5,3 +5,8 @@
 .column {
   flex: 1;
 }
+.site-header {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
