@@ -8,10 +8,10 @@ layout: default
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
-  <div class="home-columns">
-    <div class="column">
-      {{ content }}
-    </div>
+  <div class="home" style="display: flex; flex-direction: column; align-items: left;">
+    
+    {{ content }}
+    
     
 
     {%- if site.posts.size > 0 -%}
@@ -21,9 +21,9 @@ layout: default
         <li>
           <h3>
             <a class="post-link" href="{{ post.url | relative_url }} ">
-              <div class = "column">
+              
                 {{ post.title | escape }}
-              </div>
+              
               
             </a>
           </h3>
